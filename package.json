@@ -1,0 +1,22 @@
+{
+  "name": "login-signup-react",
+  "version": "1.0.0",
+  "description": "Login and SignUp for ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BackendExpert/login-signup-react.git"
+  },
+  "keywords": [
+    "ReactJS"
+  ],
+  "author": "JehanKandy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BackendExpert/login-signup-react/issues"
+  },
+  "homepage": "https://github.com/BackendExpert/login-signup-react#readme"
+}
