@@ -97,6 +97,6 @@ export default function App() {
 
 # Developers and Designers
 
-- [JehanKandy]()
+- [JehanKandy](https://github.com/BackendExpert)
 
-- [Anupa Gamage]()
+- [Anupa Gamage](https://github.com/anupa1998)
