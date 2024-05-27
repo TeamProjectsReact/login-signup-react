@@ -37,7 +37,7 @@
 
 ```json
 
-"SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components"
+    "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components/LoginSignUp"
 
 ```
 
@@ -48,7 +48,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components"
+    "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components/LoginSignUp"
   },
 
 ```
