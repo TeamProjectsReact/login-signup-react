@@ -23,3 +23,16 @@
     npm i login-signup-react
 
 ```
+
+- and then go to your `package.json` file 
+- find `scripts`
+- add following commands
+
+``` json
+
+  "scripts": {
+    "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components"
+  },
+
+```
+
