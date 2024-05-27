@@ -54,5 +54,5 @@
 
 ```
 
-- after you running the command you can see a folder `LoginSignUp` in path `src/components`
+- after you running the command you can see a folder `LoginSignUp` in path `src/components` in your Project
 
