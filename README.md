@@ -63,3 +63,16 @@
 
 - after you running the command you can see a folder `LoginSignUp` in path `src/components` in your Project
 
+- after the done this you have to update App.jsx file in the project
+
+``` jsx
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SignIn />} />
+        ...
+      </Routes>
+    </BrowserRouter> 
+
+```
+
