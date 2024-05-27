@@ -87,3 +87,14 @@ export default function App() {
 }
 ```
 
+
+
+<hr>
+
+# License and copyright notice of Package
+
+- The Package Licensed Under ISC
+
+# Developers and Designers
+
+
