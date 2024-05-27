@@ -22,6 +22,8 @@
 - - react-router-dom
 - - axios
 
+- afther install above packages
+
 - install using following NPM script
 
 ``` 
