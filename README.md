@@ -97,4 +97,6 @@ export default function App() {
 
 # Developers and Designers
 
+- [JehanKandy]()
 
+- [Anupa Gamage]()
