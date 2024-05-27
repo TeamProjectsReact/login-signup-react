@@ -19,8 +19,7 @@
 
 - install using following NPM script
 
-``` npm
-
-    npm i jk-login-signup-react
+``` 
+    npm i login-signup-react
 
 ```
