@@ -12,6 +12,6 @@
 
 # IMPORTANT Notice
 
-- This NPM package works only ReactJS + Vite + Tailwind CSS
+- This NPM package works only in ReactJS + Vite + Tailwind CSS Projects
 - The Common Working NPM Package will be Released in the Future.
 
