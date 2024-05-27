@@ -49,7 +49,6 @@
     "build": "vite build",
     "serve": "vite preview",
     "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components"
-    ...
   },
 
 ```
