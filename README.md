@@ -12,7 +12,7 @@
 
 # IMPORTANT Notice
 
-- This NPM package works only in ReactJS + Vite + Tailwind CSS Projects
+- This NPM package works only in <b>ReactJS + Vite + Tailwind CSS</b> Projects
 - The Common Working NPM Package will be Released in the Future.
 
 # How to use this NPM Package
