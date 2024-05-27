@@ -17,7 +17,7 @@
 
 # How to use this NPM Package
 
-- Befor install the Package you must install following Packages
+- Before install the Package you must install following Packages
 
 - - react-router-dom
 - - axios
