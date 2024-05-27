@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/BackendExpert/login-signup-react/issues"
   },
-  "homepage": "https://github.com/BackendExpert/login-signup-react#readme"
+  "homepage": "https://github.com/BackendExpert/login-signup-react#readme",
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  }
 }
