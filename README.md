@@ -28,9 +28,19 @@
 - find `scripts`
 - add following commands
 
-``` json
+```json
+
+"SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components"
+
+```
+
+
+``` json  
 
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
     "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components"
   },
 
