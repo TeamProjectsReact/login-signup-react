@@ -8,7 +8,7 @@ const destination = argv.destination || path.join(process.cwd(), 'src/components
 async function RunReactLoginSignIn() {
     try {
         await fs.copy(source, destination);
-        console.log('Folder copied successfully!');
+        console.log('The Login and SignUp templete Successfully Createed');
     } catch (err) {
         console.error('Error copying folder:', err);
     }
