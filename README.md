@@ -26,7 +26,7 @@
 
 - and then go to your `package.json` file 
 - find `scripts`
-- add following commands
+- add following command
 
 ```json
 
@@ -43,6 +43,14 @@
     "serve": "vite preview",
     "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components"
   },
+
+```
+
+- after that run the command
+
+```
+
+    npm run SignInUp
 
 ```
 
