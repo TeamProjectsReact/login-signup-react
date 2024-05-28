@@ -91,6 +91,12 @@ export default function App() {
 
 <hr>
 
+# Screen Shorts 
+
+<img src="ScreenShorts/signin.PNG">
+
+<img src="ScreenShorts/signup.PNG">
+
 # License and copyright notice of Package
 
 - The Package Licensed Under ISC
