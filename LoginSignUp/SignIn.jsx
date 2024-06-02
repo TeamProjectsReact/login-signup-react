@@ -23,7 +23,7 @@ const SignIn = () => {
         <div className="line">
             <div className="rec-4"></div>
             <div className="rec-4">
-                <div className="bg-white py-16 px-8 rounded shadow-md w-full ">
+                <div className="form-bg">
                     <center className='text-gray-500'>
                         {/* change the Icon According to your needs */}
                         <h1 className=''><BsMortarboardFill className='h-20 w-auto'/></h1>
