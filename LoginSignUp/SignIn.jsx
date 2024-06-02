@@ -26,7 +26,7 @@ const SignIn = () => {
                 <div className="form-bg">
                     <center className='text-gray-500'>
                         {/* change the Icon According to your needs */}
-                        <h1 className=''><BsMortarboardFill className='h-20 w-auto'/></h1>
+                        <h1 className=''><BsMortarboardFill className='logo'/></h1>
                         <p className="pt-4 text-2xl">Welcome Back</p>
                         <p className="">Your Project Name</p>
                     </center>
