@@ -161,7 +161,7 @@ export default function App() {
 
 # Screen Shorts 
 
-- outputs are same
+- outputs are same in both scripts
 
 <img src="ScreenShorts/signin.PNG">
 
