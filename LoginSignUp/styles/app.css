@@ -22,13 +22,13 @@
   width: auto;
 }
 
-.input-area {
+.input-area, .link-text {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
 @media (min-width: 768px) {
-  .input-area {
+  .input-area, .link-text {
     margin-left: 2rem;
     margin-right: 2rem;
   }
