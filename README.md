@@ -33,7 +33,10 @@
 
 - and then go to your `package.json` file 
 - find `scripts`
-- add following command
+- add following commands
+
+
+# Use with Custom CSS
 
 ```json
 
@@ -70,6 +73,7 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignIn from "./components/LoginSignUp/SignIn"; // Importing the Templete the created by run npm package
+import SignUp from "./components/LoginSignUp/SignUp"; // Importing the Templete the created by run npm package
 
 export default function App() {
   return (
@@ -79,7 +83,7 @@ export default function App() {
         {/* declare the Route */}
         {/* the path can change whatever you want */}
         <Route path="/" element={<SignIn />} /> 
-
+        <Route path="/SignUp" element={<SignUp />} /> 
 
       </Routes> 
     </BrowserRouter>
