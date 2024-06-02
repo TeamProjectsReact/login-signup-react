@@ -19,3 +19,14 @@ async function RunReactLoginSignIn() {
 }
 
 RunReactLoginSignIn();
+
+async function RunReactLoginSignInTW() {
+    try {
+        await fs.copy(sourceTW, destinationTW);
+        console.log('The Login and SignUp templete Successfully Createed');
+    } catch (err) {
+        console.error('Error copying folder:', err);
+    }
+}
+
+RunReactLoginSignInTW();
