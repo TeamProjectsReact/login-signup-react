@@ -104,6 +104,7 @@ or
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignIn from "./components/LoginSignUp/SignIn"; // Importing the Templete the created by run npm package
+import SignIn from "./components/LoginSignUp/SignUp"; // Importing the Templete the created by run npm package
 
 export default function App() {
   return (
