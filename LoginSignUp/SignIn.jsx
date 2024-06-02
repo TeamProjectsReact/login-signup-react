@@ -24,10 +24,10 @@ const SignIn = () => {
             <div className="rec-4"></div>
             <div className="rec-4">
                 <div className="form-bg">
-                    <center className='text-gray-500'>
+                    <center className='' style={{ color: 'color: rgb(107 114 128)' }}>
                         {/* change the Icon According to your needs */}
                         <h1 className=''><BsMortarboardFill className='logo'/></h1>
-                        <p className="pt-4 text-2xl">Welcome Back</p>
+                        <p className="" style={{ paddingTop: '16px', fontSize: '24px', lineHeight: '32px' }}>Welcome Back</p>
                         <p className="">Your Project Name</p>
                     </center>
                     <hr className='my-2'/>
