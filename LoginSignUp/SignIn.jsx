@@ -18,7 +18,7 @@ const SignIn = () => {
         // this will be updated in future versions
     }
   return (
-    <div className='bg-gray-200 min-h-screen py-24 px-8'>
+    <div className='app-body'>
         <center className="">
             <div className=""></div>
             <div className="">
