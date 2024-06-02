@@ -45,7 +45,7 @@ const SignIn = () => {
                                 onChange={e => SetLoginData({...LoginData, password:e.target.value})}/>
                             </div>
                             <div className="input-area">
-                                <button type='submit' className='jkbtn jkbtn-blue'>SignIn</button>
+                                <button type='submit' className='jkbtn jkbtn-blue' style={{ width: '100%' }}>SignIn</button>
                             </div>
                         </form>
                         <Link><p className="my-2 md:mx-8 text-blue-500 font-semibold">Forget Password ? </p></Link>
