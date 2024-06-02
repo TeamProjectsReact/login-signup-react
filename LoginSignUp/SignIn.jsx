@@ -36,12 +36,12 @@ const SignIn = () => {
                         <form onSubmit={headleSubmit}>
                             <div className="input-area">
                                 <label htmlFor="" className=''>Email : </label>
-                                <input type="email" name="" id="" className="w-full h-12 pl-2 rounded bg-gray-200" required placeholder='Enter Email Address'
+                                <input type="email" name="" id="" className="feild-input" required placeholder='Enter Email Address'
                                 onChange={e => SetLoginData({...LoginData, email:e.target.value})}/>
                             </div>
                             <div className="input-area">
                                 <label htmlFor="" className=''>Password : </label>
-                                <input type="password" name="" id="" className="w-full h-12 pl-2 rounded bg-gray-200" required placeholder='Enter Password' 
+                                <input type="password" name="" id="" className="feild-input" required placeholder='Enter Password' 
                                 onChange={e => SetLoginData({...LoginData, password:e.target.value})}/>
                             </div>
                             <div className="input-area">
