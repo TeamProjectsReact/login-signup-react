@@ -56,7 +56,7 @@ const SignUp = () => {
                     <p className="" style={{ marginTop: '16px', marginBottom: '16px' }}>Already have an Account ? <Link to={'/'}><span className="" style={{ color: 'rgb(59 130 246)' }}>SignIn</span></Link></p>
                 </div>  
             </div>
-            <div className=""></div>
+            <div className="rec-4"></div>
         </div>
     </div>
   )
