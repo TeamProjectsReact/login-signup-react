@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BsMortarboardFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import './styles/app.css'
-import '@jehankandy/jkcss'
+import '@jehankandy/jkcss/src/layout/columns/columns.css'
 
 const SignIn = () => {
     // for login data
@@ -19,7 +19,7 @@ const SignIn = () => {
         // this will be updated in future versions
     }
   return (
-    <div className='bg-gray-200 min-h-screen py-24 px-8'>
+    <div className='app-body'>
         <div className="line">
             <div className="rec-4"></div>
             <div className="rec-4">
