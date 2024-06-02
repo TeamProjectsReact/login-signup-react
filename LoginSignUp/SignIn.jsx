@@ -19,7 +19,7 @@ const SignIn = () => {
     }
   return (
     <div className='bg-gray-200 min-h-screen py-24 px-8'>
-        <div className="md:grid grid-cols-3 gap-2">
+        <center className="">
             <div className=""></div>
             <div className="">
                 <div className="bg-white py-16 px-8 rounded shadow-md w-full ">
@@ -53,7 +53,7 @@ const SignIn = () => {
                 </div>  
             </div>
             <div className=""></div>
-        </div>
+        </center>
     </div>
   )
 }
