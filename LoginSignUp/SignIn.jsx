@@ -50,8 +50,8 @@ const SignIn = () => {
                         </form>
                         <Link><p className="link-text">Forget Password ? </p></Link>
                     </div>
-                    <hr className='my-2'/>
-                    <p className="my-4">Don't have an Account ? <Link to={'/SignUp'}><span className="text-blue-500">SignUp</span></Link></p>
+                    <hr className='' style={{ marginTop: '8px', marginBottom: '8px' }}/>
+                    <p className="" style={{ marginTop: '16px', marginBottom: '16px' }}>Don't have an Account ? <Link to={'/SignUp'}><span className="" style={{ color: 'rgb(59 130 246)' }}>SignUp</span></Link></p>
                 </div>  
             </div>
             <div className="rec-4"></div>
