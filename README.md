@@ -12,7 +12,8 @@
 
 # IMPORTANT Notice
 
-- This NPM package works only with <b>ReactJS + Vite + Tailwind CSS</b> Projects
+- This NPM package works with <b>ReactJS</b> Projects (from in v2.0.0)
+- This NPM package works only with <b>ReactJS + Vite + Tailwind CSS</b> Projects (in v1.1.0)
 - The Common Working NPM Package will be Released in the Future.
 
 # How to use this NPM Package
@@ -34,6 +35,7 @@
 - and then go to your `package.json` file 
 - find `scripts`
 - add following commands
+
 
 
 # Use with Custom CSS
