@@ -97,7 +97,7 @@ export default function App() {
 
 ```json
 
-    "SignInUpTW": "node node_modules/login-signup-react/index.js --destination=src/components/LoginSignUp"
+    "SignInUpTW": "node -e \"require('login-signup-react').RunReactLoginSignInTW()\""
 
 ```
 
@@ -108,7 +108,7 @@ export default function App() {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components/LoginSignUp"
+    "SignInUpTW": "node -e \"require('login-signup-react').RunReactLoginSignInTW()\""
   },
 
 ```
@@ -121,7 +121,7 @@ export default function App() {
 
 ```
 
-- after you running the command you can see a folder `LoginSignUp` in path `src/components` in your Project
+- after you running the command you can see a folder `LoginSignUpTW` in path `src/components` in your Project
 
 - after done this you have to update App.jsx file in the project
 
@@ -129,8 +129,8 @@ export default function App() {
 
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SignIn from "./components/LoginSignUp/SignIn"; // Importing the Templete the created by run npm package
-import SignUp from "./components/LoginSignUp/SignUp"; // Importing the Templete the created by run npm package
+import SignIn from "./components/LoginSignUpTW/SignIn"; // Importing the Templete the created by run npm package
+import SignUp from "./components/LoginSignUpTW/SignUp"; // Importing the Templete the created by run npm package
 
 export default function App() {
   return (
