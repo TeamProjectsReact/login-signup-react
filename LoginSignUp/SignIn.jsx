@@ -30,8 +30,8 @@ const SignIn = () => {
                         <p className="" style={{ paddingTop: '16px', fontSize: '24px', lineHeight: '32px' }}>Welcome Back</p>
                         <p className="">Your Project Name</p>
                     </center>
-                    <hr className='my-2' style={{  }}/>
-                    <div className="my-4">
+                    <hr className='' style={{ marginTop: '8px', marginBottom: '8px' }}/>
+                    <div className="" style={{ marginTop: '16px', marginBottom: '16px' }}>
                         <form onSubmit={headleSubmit}>
                             <div className="my-2 md:mx-8">
                                 <label htmlFor="" className=''>Email : </label>
