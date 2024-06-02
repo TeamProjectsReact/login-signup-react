@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { BsMortarboardFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
-import './styles/app.css'
+import '../'
 
 const SignIn = () => {
     // for login data
