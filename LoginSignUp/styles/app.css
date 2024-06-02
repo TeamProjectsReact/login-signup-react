@@ -1,3 +1,4 @@
 .app-body {
   background: #e5e7eb;
+  min-width: 100vh;
 }
