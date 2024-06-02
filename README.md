@@ -36,15 +36,36 @@
 - add following command
 
 - IMPORTANT
+- - Please use only on script according to your need
 - - use the following scripts according to following script
 
+- - if you use TailWind CSS with ReactJS use 
+
+```json
+
+    "SignInUpTW": "node -e \"require('login-signup-react').RunReactLoginSignInTW()\""
+
+```
+- - if you not use TailWind CSS with ReactJS use 
 
 ```json
 
     "SignInUp": "node -e \"require('login-signup-react').RunReactLoginSignIn()\"",
-    "SignInUpTW": "node -e \"require('login-signup-react').RunReactLoginSignInTW()\""
+
 
 ```
+
+``` json  
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "SignInUpTW": "node -e \"require('login-signup-react').RunReactLoginSignInTW()\""
+  },
+
+```
+
 
 
 ``` json  
@@ -53,7 +74,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components/LoginSignUp"
+    "SignInUp": "node -e \"require('login-signup-react').RunReactLoginSignIn()\"",
   },
 
 ```
