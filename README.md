@@ -161,6 +161,8 @@ export default function App() {
 
 # Screen Shorts 
 
+- outputs are same
+
 <img src="ScreenShorts/signin.PNG">
 
 <img src="ScreenShorts/signup.PNG">
