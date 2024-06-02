@@ -35,9 +35,14 @@
 - find `scripts`
 - add following command
 
+- IMPORTANT
+- - use the following scripts according to following script
+
+
 ```json
 
-    "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components/LoginSignUp"
+    "SignInUp": "node -e \"require('login-signup-react').RunReactLoginSignIn()\"",
+    "SignInUpTW": "node -e \"require('login-signup-react').RunReactLoginSignInTW()\""
 
 ```
 
