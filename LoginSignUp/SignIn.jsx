@@ -48,7 +48,7 @@ const SignIn = () => {
                                 <button type='submit' className='jkbtn jkbtn-blue' style={{ width: '100%', marginTop: '2rem' }}>SignIn</button>
                             </div>
                         </form>
-                        <Link><p className="link-text my-2 md:mx-8 text-blue-500 font-semibold">Forget Password ? </p></Link>
+                        <Link><p className="link-text">Forget Password ? </p></Link>
                     </div>
                     <hr className='my-2'/>
                     <p className="my-4">Don't have an Account ? <Link to={'/SignUp'}><span className="text-blue-500">SignUp</span></Link></p>
