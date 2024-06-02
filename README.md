@@ -18,6 +18,11 @@
 
 # How to use this NPM Package
 
+- Important
+- - use NPM scripts according to your needs
+- - use only on script
+
+
 - Before install the Package you must install following Packages
 
 - - react-router-dom
@@ -36,9 +41,11 @@
 - find `scripts`
 - add following commands
 
+- Use with Custom CSS
+- Use Tailwind CSS
 
 
-# Use with Custom CSS
+### Use with Custom CSS
 
 ```json
 
@@ -95,7 +102,7 @@ export default function App() {
 <hr>
 
 
-# Use Tailwind CSS
+### Use Tailwind CSS
 
 ```json
 
