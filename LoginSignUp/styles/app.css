@@ -27,6 +27,11 @@
   margin-bottom: 8px;
 }
 
+.link-text {
+  color: rgb(59, 130, 246);
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   .input-area, .link-text {
     margin-left: 2rem;

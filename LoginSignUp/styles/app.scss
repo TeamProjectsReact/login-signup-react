@@ -25,6 +25,8 @@
 }
 .link-text{
     @extend .input-area;
+    color: rgb(59 130 246);
+    font-weight: 600;
 }
 
 // responcive styles
@@ -33,8 +35,5 @@
     .input-area{
         margin-left: 2rem;
         margin-right: 2rem;
-    }
-    .input-area{
-        @extend .input-area
     }
 }
