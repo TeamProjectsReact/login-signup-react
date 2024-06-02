@@ -3,6 +3,7 @@ import { BsMortarboardFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import './styles/app.css'
 import '@jehankandy/jkcss/src/layout/columns/columns.css'
+import '@jehankandy/jkcss/src/buttons/button.css'
 
 const SignIn = () => {
     // for login data
@@ -44,7 +45,7 @@ const SignIn = () => {
                                 onChange={e => SetLoginData({...LoginData, password:e.target.value})}/>
                             </div>
                             <div className="input-area">
-                                <button type='submit' className='mt-8 font-semibold w-full py-4 px-8 rounded bg-blue-500 text-white shadow-md duration-500 hover:bg-blue-600'>SignIn</button>
+                                <button type='submit' className='jkbtn jkbtn-blue'>SignIn</button>
                             </div>
                         </form>
                         <Link><p className="my-2 md:mx-8 text-blue-500 font-semibold">Forget Password ? </p></Link>
