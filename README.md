@@ -40,7 +40,7 @@
 
 ```json
 
-    "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components/LoginSignUp"
+    "SignInUp": "node -e \"require('login-signup-react').RunReactLoginSignIn()\"",
 
 ```
 
@@ -51,7 +51,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components/LoginSignUp"
+    "SignInUp": "node -e \"require('login-signup-react').RunReactLoginSignIn()\"",
   },
 
 ```
