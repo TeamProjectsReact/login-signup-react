@@ -18,10 +18,10 @@ const SignIn = () => {
         // this will be updated in future versions
     }
   return (
-    <div className='app-body'>
-        <center className="">
-            <div className=""></div>
-            <div className="">
+    <div className='bg-gray-200 min-h-screen py-24 px-8'>
+        <div className="line">
+            <div className="rec-4"></div>
+            <div className="rec-4">
                 <div className="bg-white py-16 px-8 rounded shadow-md w-full ">
                     <center className='text-gray-500'>
                         {/* change the Icon According to your needs */}
@@ -52,8 +52,8 @@ const SignIn = () => {
                     <p className="my-4">Don't have an Account ? <Link to={'/SignUp'}><span className="text-blue-500">SignUp</span></Link></p>
                 </div>  
             </div>
-            <div className=""></div>
-        </center>
+            <div className="rec-4"></div>
+        </div>
     </div>
   )
 }
