@@ -33,7 +33,7 @@ const SignIn = () => {
                     <hr className='' style={{ marginTop: '8px', marginBottom: '8px' }}/>
                     <div className="" style={{ marginTop: '16px', marginBottom: '16px' }}>
                         <form onSubmit={headleSubmit}>
-                            <div className="my-2 md:mx-8">
+                            <div className="my-2 md:mx-8 input-area">
                                 <label htmlFor="" className=''>Email : </label>
                                 <input type="email" name="" id="" className="w-full h-12 pl-2 rounded bg-gray-200" required placeholder='Enter Email Address'
                                 onChange={e => SetLoginData({...LoginData, email:e.target.value})}/>

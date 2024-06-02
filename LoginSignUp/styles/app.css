@@ -21,3 +21,8 @@
   height: 5rem;
   width: auto;
 }
+
+.input-area {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

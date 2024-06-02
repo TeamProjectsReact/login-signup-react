@@ -19,9 +19,15 @@
     height: 5rem;
     width: auto;
 }
+.input-area{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 
 // responcive styles
 
 @media (min-width: 768px) {
-    
+    .input-area{
+        
+    }
 }
