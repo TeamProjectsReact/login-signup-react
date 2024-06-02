@@ -87,6 +87,14 @@
 
 ```
 
+or
+
+```
+
+    npm run SignInUpTW
+
+```
+
 - after you running the command you can see a folder `LoginSignUp` in path `src/components` in your Project
 
 - after done this you have to update App.jsx file in the project
@@ -105,6 +113,7 @@ export default function App() {
         {/* declare the Route */}
         {/* the path can change whatever you want */}
         <Route path="/" element={<SignIn />} /> 
+        <Route path="/SignUp" element={<SignUp />} /> 
 
 
       </Routes> 
