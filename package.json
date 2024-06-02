@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "description": "Login and SignUp for ReactJS",
   "main": "index.js",
-
   "bin": {
     "login-signup-react": "index.js"
   },
@@ -21,6 +20,7 @@
   },
   "homepage": "https://github.com/BackendExpert/login-signup-react#readme",
   "dependencies": {
+    "@jehankandy/jkcss": "^6.0.0",
     "fs-extra": "^11.2.0",
     "yargs": "^17.7.2"
   }
