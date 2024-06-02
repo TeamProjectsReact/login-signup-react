@@ -35,37 +35,11 @@
 - find `scripts`
 - add following command
 
-- IMPORTANT
-- - Please use only on script according to your need
-- - use the following scripts according to following script
-
-- - if you use TailWind CSS with ReactJS use 
-
 ```json
 
-    "SignInUpTW": "node -e \"require('login-signup-react').RunReactLoginSignInTW()\""
+    "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components/LoginSignUp"
 
 ```
-- - if you not use TailWind CSS with ReactJS use 
-
-```json
-
-    "SignInUp": "node -e \"require('login-signup-react').RunReactLoginSignIn()\"",
-
-
-```
-
-``` json  
-
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview",
-    "SignInUpTW": "node -e \"require('login-signup-react').RunReactLoginSignInTW()\""
-  },
-
-```
-
 
 
 ``` json  
@@ -74,7 +48,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "SignInUp": "node -e \"require('login-signup-react').RunReactLoginSignIn()\"",
+    "SignInUp": "node node_modules/login-signup-react/index.js --destination=src/components/LoginSignUp"
   },
 
 ```
@@ -87,14 +61,6 @@
 
 ```
 
-or
-
-```
-
-    npm run SignInUpTW
-
-```
-
 - after you running the command you can see a folder `LoginSignUp` in path `src/components` in your Project
 
 - after done this you have to update App.jsx file in the project
@@ -104,7 +70,6 @@ or
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignIn from "./components/LoginSignUp/SignIn"; // Importing the Templete the created by run npm package
-import SignIn from "./components/LoginSignUp/SignUp"; // Importing the Templete the created by run npm package
 
 export default function App() {
   return (
@@ -114,7 +79,6 @@ export default function App() {
         {/* declare the Route */}
         {/* the path can change whatever you want */}
         <Route path="/" element={<SignIn />} /> 
-        <Route path="/SignUp" element={<SignUp />} /> 
 
 
       </Routes> 
