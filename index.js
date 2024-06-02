@@ -31,16 +31,7 @@ async function RunReactLoginSignInTW() {
 
 
 
-
-const args = process.argv.slice(2);
-
-switch (args[0]) {
-  case 'CSS':
-    RunReactLoginSignIn();
-    break;
-  case 'TW':
-    RunReactLoginSignInTW();
-    break;
-  default:
-    console.log('No valid function name provided.');
+module.exports = {
+    RunReactLoginSignIn,
+    RunReactLoginSignInTW
 }
