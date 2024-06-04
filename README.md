@@ -134,8 +134,44 @@
 
 - After you install package
 
-- 
+- add following command to you `package.json` file at `script`
 
+``` js
+
+  "SignInUpBackend": "node -e \"require('login-signup-react').RunBackendMysqlNoMVC()\""
+
+```
+
+- and the run above command 
+
+- after you can see `server` folder in your root folder 
+
+- it is the backend 
+
+- go inside the `server` folder and create file `.gitignore`
+
+- and add 
+
+```
+node_modules
+
+```
+
+- after run 
+
+```sh
+
+  npm install
+
+```
+
+- then develop your mysql evniroment
+
+- or you can use sql file in `Database` folder in `server` folder
+
+- start the Project
+
+- - both Frandend and Backend
 
 # Screen Shorts 
 
