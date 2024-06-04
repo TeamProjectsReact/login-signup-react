@@ -8,6 +8,7 @@ import '@jehankandy/jkcss/src/layout/columns/columns.css'
 import '@jehankandy/jkcss/src/buttons/button.css'
 
 const SignUp = () => {
+    const navigate = useNavigate()
      // for login data
     const [SignUpData, SetSignUpData] = useState({
         username: '',

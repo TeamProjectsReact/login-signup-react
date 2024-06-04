@@ -5,6 +5,7 @@ import axios from 'axios'
 import  secureLocalStorage  from  "react-secure-storage";
 
 const SignIn = () => {
+    const navigate = useNavigate()
     // for login data
     const [LoginData, SetLoginData] = useState({
         email: '',
