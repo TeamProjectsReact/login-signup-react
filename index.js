@@ -21,7 +21,7 @@ const sourceDash = argv.source || path.join(__dirname, 'Dashboard');
 const destinationDash = argv.destination || path.join(process.cwd(), 'src/components/Dashboard');
 
 const sourceBackendMysqlNoMVC = argv.source || path.join(__dirname, 'BackEndMysqlNoMVC/server');
-const destinationBackendMysqlNoMVC = argv.destination || path.join(process.cwd(), 'server/');
+const destinationBackendMysqlNoMVC = argv.destination || path.join(process.cwd(), '../server/');
 
 
 async function RunReactLoginSignIn() {
