@@ -18,7 +18,7 @@
 ## v2.0.0 - 02 June 2024
 
 - Updating Package
-- Adding SignIn Interface
+- Adding Custom CSS login and Signup Forms
 
 # IMPORTANT Notice
 
