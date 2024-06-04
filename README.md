@@ -10,11 +10,33 @@
 - Initial release of the Project
 - only for Login(signin)
 
+## v1.1.0 - 28 May 2024
+
+- Updating Package
+- Adding SignIn Interface
+
+## v2.0.0 - 02 June 2024
+
+- Updating Package
+- Adding Custom CSS login and Signup Forms
+
+## v3.0.0 - 04 June 2024
+
+- Updating Package
+- Fixing Bugs 
+- Adding Backend Development Enviroment
+- Adding Backend Function for Login and SignUp
+- - with Database
+- - Still working only with Musql without MVC
+
 # IMPORTANT Notice
 
 - This NPM package works with <b>ReactJS</b> Projects (from in v2.0.0)
 - This NPM package works only with <b>ReactJS + Vite + Tailwind CSS</b> Projects (in v1.1.0)
 - The Common Working NPM Package will be Released in the Future.
+
+- The Backend is only in Mysql `without` MVC
+- MVC, Mongodb will be added in future Releases
 
 # How to use this NPM Package
 
@@ -75,30 +97,7 @@
 
 - after you running the command you can see a folder `LoginSignUp` in path `src/components` in your Project
 
-- after done this you have to update App.jsx file in the project
 
-``` jsx
-
-
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SignIn from "./components/LoginSignUp/SignIn"; // Importing the Templete the created by run npm package
-import SignUp from "./components/LoginSignUp/SignUp"; // Importing the Templete the created by run npm package
-
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-
-        {/* declare the Route */}
-        {/* the path can change whatever you want */}
-        <Route path="/" element={<SignIn />} /> 
-        <Route path="/SignUp" element={<SignUp />} /> 
-
-      </Routes> 
-    </BrowserRouter>
-  )
-}
-```
 <hr>
 
 
@@ -126,38 +125,56 @@ export default function App() {
 
 ```
 
-    npm run SignInUp
+    npm run SignInUpTW
 
 ```
 
 - after you running the command you can see a folder `LoginSignUpTW` in path `src/components` in your Project
 
-- after done this you have to update App.jsx file in the project
-
-``` jsx
-
-
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SignIn from "./components/LoginSignUpTW/SignIn"; // Importing the Templete the created by run npm package
-import SignUp from "./components/LoginSignUpTW/SignUp"; // Importing the Templete the created by run npm package
-
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-
-        {/* declare the Route */}
-        {/* the path can change whatever you want */}
-        <Route path="/" element={<SignIn />} /> 
-        <Route path="/SignUp" element={<SignUp />} /> 
-
-      </Routes> 
-    </BrowserRouter>
-  )
-}
-```
 <hr>
 
+## BackEnd
+
+- After you install package
+
+- add following command to you `package.json` file at `script`
+
+``` js
+
+  "SignInUpBackend": "node -e \"require('login-signup-react').RunBackendMysqlNoMVC()\""
+
+```
+
+- and the run above command 
+
+- after you can see `server` folder in your root folder 
+
+- it is the backend 
+
+- go inside the `server` folder and create file `.gitignore`
+
+- and add 
+
+```
+node_modules
+
+```
+
+- after run 
+
+```sh
+
+  npm install
+
+```
+
+- then develop your mysql evniroment
+
+- or you can use sql file in `Database` folder in `server` folder
+
+- start the Project
+
+- - both Frandend and Backend
 
 # Screen Shorts 
 
