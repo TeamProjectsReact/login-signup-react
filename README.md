@@ -136,7 +136,7 @@ export default function App() {
 
 ```
 
-    npm run SignInUp
+    npm run SignInUpTW
 
 ```
 
