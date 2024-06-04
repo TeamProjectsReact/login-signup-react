@@ -8,10 +8,14 @@ const destination = argv.destination || path.join(process.cwd(), 'src/components
 const sourceApp = argv.source || path.join(__dirname, 'App/App.jsx');
 const destinationApp = argv.destination || path.join(process.cwd(), 'src/');
 
-
 const sourceTW = argv.source || path.join(__dirname, 'LoginSignUpTW');
 const destinationTW = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUpTW');
 
+const sourceAppTW = argv.source || path.join(__dirname, 'AppTW/App.jsx');
+const destinationAppTW = argv.destination || path.join(process.cwd(), 'src/');
+
+const sourcePR= argv.source || path.join(__dirname, 'AppTW/App.jsx');
+const destinationPR = argv.destination || path.join(process.cwd(), 'src/');
 
 async function RunReactLoginSignIn() {
     try {
