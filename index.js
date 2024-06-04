@@ -17,6 +17,10 @@ const destinationAppTW = argv.destination || path.join(process.cwd(), 'src/');
 const sourcePR = argv.source || path.join(__dirname, 'PrivateRoute/PrivateRoute.jsx');
 const destinationPR = argv.destination || path.join(process.cwd(), 'src/components/PrivateRoute');
 
+const sourceBackendMysqlNoMVC = argv.source || path.join(__dirname, 'BackEndMysqlNoMVC/server');
+const destinationBackendMysqlNoMVC = argv.destination || path.join(process.cwd(), 'server/');
+
+
 async function RunReactLoginSignIn() {
     try {
         await fs.copy(source, destination);
@@ -42,7 +46,12 @@ async function RunReactLoginSignInTW() {
 }
 
 async function RunBackendMysqlNoMVC() {
-
+    try {
+        await fs.copy(sourceBackendMysqlNoMVC, destinationBackendMysqlNoMVC);
+        console.log('Backend Development Enviroment Created Successful');
+    } catch (err) {
+        console.error('Error copying folder:', err);
+    }
 }
 
 module.exports = {
