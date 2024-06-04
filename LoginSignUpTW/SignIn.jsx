@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { BsMortarboardFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import axios from 'axios'
+import  secureLocalStorage  from  "react-secure-storage";
 
 const SignIn = () => {
     // for login data
