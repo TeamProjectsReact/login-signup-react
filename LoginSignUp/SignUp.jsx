@@ -11,11 +11,27 @@ const SignUp = () => {
     })
 
     // send data to backend using axios
-    const headleSubmit = (e) => {
+    const headleSubmit = async (e) => {
         e.preventDefault();
 
         // signup to system
-        // this will be updated in future versions
+
+        try{
+            const res = await axios.post('http://localhost:8081/SignUp', SignUpData)
+            .then(res => {
+                if(res.data.Status === "Success"){
+                    alert("Registation Successfull")
+                    navigate('/')
+                }
+                else{
+                    alert(res.data.Error)
+                }
+            })
+        }
+        catch(err) {
+            console.log(err)
+        }
+
     }
   return (
     <div className='app-body'>
