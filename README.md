@@ -94,30 +94,7 @@
 
 - after you running the command you can see a folder `LoginSignUp` in path `src/components` in your Project
 
-- after done this you have to update App.jsx file in the project
 
-``` jsx
-
-
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SignIn from "./components/LoginSignUp/SignIn"; // Importing the Templete the created by run npm package
-import SignUp from "./components/LoginSignUp/SignUp"; // Importing the Templete the created by run npm package
-
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-
-        {/* declare the Route */}
-        {/* the path can change whatever you want */}
-        <Route path="/" element={<SignIn />} /> 
-        <Route path="/SignUp" element={<SignUp />} /> 
-
-      </Routes> 
-    </BrowserRouter>
-  )
-}
-```
 <hr>
 
 
@@ -151,31 +128,13 @@ export default function App() {
 
 - after you running the command you can see a folder `LoginSignUpTW` in path `src/components` in your Project
 
-- after done this you have to update App.jsx file in the project
-
-``` jsx
-
-
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SignIn from "./components/LoginSignUpTW/SignIn"; // Importing the Templete the created by run npm package
-import SignUp from "./components/LoginSignUpTW/SignUp"; // Importing the Templete the created by run npm package
-
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-
-        {/* declare the Route */}
-        {/* the path can change whatever you want */}
-        <Route path="/" element={<SignIn />} /> 
-        <Route path="/SignUp" element={<SignUp />} /> 
-
-      </Routes> 
-    </BrowserRouter>
-  )
-}
-```
 <hr>
+
+## BackEnd
+
+- After you install package
+
+- 
 
 
 # Screen Shorts 
