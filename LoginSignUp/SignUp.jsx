@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import { BsMortarboardFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import axios from 'axios'
+import './styles/app.css'
+import '@jehankandy/jkcss/src/layout/columns/columns.css'
+import '@jehankandy/jkcss/src/buttons/button.css'
 
 const SignUp = () => {
      // for login data
