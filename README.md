@@ -10,10 +10,15 @@
 - Initial release of the Project
 - only for Login(signin)
 
-## v1.1.0 - 27 May 2024
+## v1.1.0 - 28 May 2024
 
-- Initial release of the Project
-- only for Login(signin)
+- Updating Package
+- Adding SignIn Interface
+
+## v2.0.0 - 02 June 2024
+
+- Updating Package
+- Adding SignIn Interface
 
 # IMPORTANT Notice
 
