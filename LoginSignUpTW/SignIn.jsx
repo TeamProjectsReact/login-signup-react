@@ -10,11 +10,48 @@ const SignIn = () => {
     })
 
     // send data to backend using axios
-    const headleSubmit = (e) => {
+    const headleSubmit = async (e) => {
         e.preventDefault();
 
         // login to system
-        // this will be updated in future versions
+
+        try{
+            const res = await axios.post('http://localhost:8081/SignIn', LoginData)
+
+            const loginToken = res.data.Token;
+
+            //store token in localstorage
+            localStorage.setItem('LoginToken', loginToken)
+
+            if(res.data.Msg === "Success"){
+                if(res.data.LoginUser[0].is_active === 0 && res.data.LoginUser[0].is_lock === 1){
+                    alert('Your Account has been locked. Unauthorized activity has been detected.')
+                    localStorage.clear()
+                    navigate('/')
+                }
+                else if(res.data.LoginUser[0].is_active === 0){
+                    alert('Your Account is still not Activate Wait for Activate from Admin')
+                    localStorage.clear()
+                    navigate('/')
+                }
+                else{
+                    //get and store login user role and email
+                    const userRole = res.data.LoginUser[0].role;
+                    const userEmail = res.data.LoginUser[0].email;
+
+                    //store data in localstore so that use secureLocalStorage
+                    secureLocalStorage.setItem("Login1", userRole);
+                    secureLocalStorage.setItem("login2", userEmail);
+                    navigate('/Dashboard');
+                }
+            }
+            else{
+                alert(res.data.Error)
+            }
+        }
+        catch (err) {
+            console.log(err)
+        }
     }
   return (
     <div className='bg-gray-200 min-h-screen py-24 px-8'>
