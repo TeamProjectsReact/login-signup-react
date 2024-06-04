@@ -35,6 +35,9 @@
 - This NPM package works only with <b>ReactJS + Vite + Tailwind CSS</b> Projects (in v1.1.0)
 - The Common Working NPM Package will be Released in the Future.
 
+- The Backend is only in Mysql `without` MVC
+- MVC, Mongodb will be added in future Releases
+
 # How to use this NPM Package
 
 - Important
