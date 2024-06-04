@@ -20,6 +20,15 @@
 - Updating Package
 - Adding Custom CSS login and Signup Forms
 
+## v3.0.0 - 04 June 2024
+
+- Updating Package
+- Fixing Bugs 
+- Adding Backend Development Enviroment
+- Adding Backend Function for Login and SignUp
+- - with Database
+- - Still working only with Musql without MVC
+
 # IMPORTANT Notice
 
 - This NPM package works with <b>ReactJS</b> Projects (from in v2.0.0)
