@@ -20,8 +20,8 @@ const destinationPR = argv.destination || path.join(process.cwd(), 'src/componen
 const sourceDash = argv.source || path.join(__dirname, 'Dashboard');
 const destinationDash = argv.destination || path.join(process.cwd(), 'src/components/Dashboard');
 
-const sourceBackendMysqlNoMVC = argv.source || path.join(__dirname, 'BackEndMysqlNoMVC/server');
-const destinationBackendMysqlNoMVC = argv.destination || path.join(process.cwd(), '../server/');
+const sourceBackendMysqlNoMVC = argv.source || path.join(__dirname, 'BackEndMysqlNoMVC');
+const destinationBackendMysqlNoMVC = argv.destination || path.join(process.cwd(), '../');
 
 
 async function RunReactLoginSignIn() {
