@@ -11,11 +11,14 @@ const destinationApp = argv.destination || path.join(process.cwd(), 'src/');
 const sourceTW = argv.source || path.join(__dirname, 'LoginSignUpTW');
 const destinationTW = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUpTW');
 
-const sourceAppTW = argv.source || path.join(__dirname, 'AppTW/App.jsx');
+const sourceAppTW = argv.source || path.join(__dirname, 'AppTW');
 const destinationAppTW = argv.destination || path.join(process.cwd(), 'src/');
 
-const sourcePR = argv.source || path.join(__dirname, 'PrivateRoute/PrivateRoute.jsx');
+const sourcePR = argv.source || path.join(__dirname, 'PrivateRoute');
 const destinationPR = argv.destination || path.join(process.cwd(), 'src/components/PrivateRoute');
+
+const sourceDash = argv.source || path.join(__dirname, 'PrivateRoute');
+const destinationDash = argv.destination || path.join(process.cwd(), 'src/components/PrivateRoute');
 
 const sourceBackendMysqlNoMVC = argv.source || path.join(__dirname, 'BackEndMysqlNoMVC/server');
 const destinationBackendMysqlNoMVC = argv.destination || path.join(process.cwd(), 'server/');
