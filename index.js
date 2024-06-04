@@ -41,9 +41,12 @@ async function RunReactLoginSignInTW() {
     }
 }
 
+async function RunBackendMysqlNoMVC() {
 
+}
 
 module.exports = {
     RunReactLoginSignIn,
-    RunReactLoginSignInTW
+    RunReactLoginSignInTW,
+    RunBackendMysqlNoMVC
 }
