@@ -5,6 +5,10 @@ const argv = require('yargs').argv;
 const source = argv.source || path.join(__dirname, 'LoginSignUp');
 const destination = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUp');
 
+const sourceApp = argv.source || path.join(__dirname, 'App/App.jsx');
+const destinationApp = argv.destination || path.join(process.cwd(), 'src/');
+
+
 const sourceTW = argv.source || path.join(__dirname, 'LoginSignUpTW');
 const destinationTW = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUpTW');
 
