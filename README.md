@@ -10,6 +10,11 @@
 - Initial release of the Project
 - only for Login(signin)
 
+## v1.1.0 - 27 May 2024
+
+- Initial release of the Project
+- only for Login(signin)
+
 # IMPORTANT Notice
 
 - This NPM package works with <b>ReactJS</b> Projects (from in v2.0.0)
