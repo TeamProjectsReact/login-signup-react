@@ -16,15 +16,19 @@ if (type === 'loginSignUp') {
     const source = argv.source || path.join(__dirname, 'LoginSignUp');
     const destination = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUp');
 
-    try {
-        await fs.copy(source, destination);
-        console.log('The Login and SignUp templete Successfully Createed');
-    } catch (err) {
-        console.error('Error copying folder:', err);
-    }       
+    async function RunReactLoginSignIn() {
+        try {
+            await fs.copy(source, destination);
+            console.log('The Login and SignUp templete Successfully Createed');
+        } catch (err) {
+            console.error('Error copying folder:', err);
+        }
+    }
+
+    module.exports = RunReactLoginSignIn    
 } 
 
-console.log(`${type} created at ${filePath}`);
+// console.log(`${type.charAt(0).toUpperCase() + type.slice(1)} ${name} created at ${filePath}`);
 
 
 // const sourceApp = argv.source || path.join(__dirname, 'App');
