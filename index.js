@@ -16,10 +16,18 @@ if (type === 'loginSignUp') {
     const source = argv.source || path.join(__dirname, 'LoginSignUp');
     const destination = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUp');
 
-    
+    try {
+        await fs.copy(source, destination);
+        await fs.copy(sourceApp, destinationApp);
+        await fs.copy(sourcePR, destinationPR);
+        await fs.copy(sourceDash, destinationDash);
+        console.log('The Login and SignUp templete Successfully Createed');
+    } catch (err) {
+        console.error('Error copying folder:', err);
+    }       
 } 
 
-console.log(`${type.charAt(0).toUpperCase() + type.slice(1)} ${name} created at ${filePath}`);
+console.log(`${type} created at ${filePath}`);
 
 
 const sourceApp = argv.source || path.join(__dirname, 'App');
@@ -41,17 +49,7 @@ const sourceBackendMysqlNoMVC = argv.source || path.join(__dirname, 'BackEndMysq
 const destinationBackendMysqlNoMVC = argv.destination || path.join(process.cwd(), '../');
 
 
-async function RunReactLoginSignIn() {
-    try {
-        await fs.copy(source, destination);
-        await fs.copy(sourceApp, destinationApp);
-        await fs.copy(sourcePR, destinationPR);
-        await fs.copy(sourceDash, destinationDash);
-        console.log('The Login and SignUp templete Successfully Createed');
-    } catch (err) {
-        console.error('Error copying folder:', err);
-    }
-}
+
 
 
 
