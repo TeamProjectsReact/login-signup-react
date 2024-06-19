@@ -10,6 +10,7 @@ if (!type || !name) {
     process.exit(1);
 }
   
+if ()
 
 const source = argv.source || path.join(__dirname, 'LoginSignUp');
 const destination = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUp');
