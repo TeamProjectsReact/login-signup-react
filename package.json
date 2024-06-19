@@ -4,7 +4,7 @@
   "description": "Login and SignUp for ReactJS",
   "main": "index.js",
   "bin": {
-    "login-signup-react": "index.js"
+    "create": "index.js"
   },
   "repository": {
     "type": "git",
