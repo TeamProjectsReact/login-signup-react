@@ -1,6 +1,6 @@
 {
   "name": "login-signup-react",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Login and SignUp for ReactJS",
   "main": "index.js",
   "bin": {
