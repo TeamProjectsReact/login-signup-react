@@ -5,7 +5,11 @@ const argv = require('yargs').argv;
 const type = process.argv[2];
 const name = process.argv[3];
 
-
+if (!type || !name) {
+    console.error('Please provide Valied Command');
+    process.exit(1);
+}
+  
 
 const source = argv.source || path.join(__dirname, 'LoginSignUp');
 const destination = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUp');
