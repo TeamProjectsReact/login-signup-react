@@ -2,6 +2,11 @@ const fs = require('fs-extra');
 const path = require('path');
 const argv = require('yargs').argv;
 
+const type = process.argv[2];
+const name = process.argv[3];
+
+
+
 const source = argv.source || path.join(__dirname, 'LoginSignUp');
 const destination = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUp');
 
