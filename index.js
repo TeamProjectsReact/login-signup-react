@@ -9,8 +9,14 @@ if (!type || !name) {
     console.error('Please provide Valied Command');
     process.exit(1);
 }
-  
-if ()
+let fileContent;
+let filePath;
+
+if (type === 'controller') {
+
+} 
+
+console.log(`${type.charAt(0).toUpperCase() + type.slice(1)} ${name} created at ${filePath}`);
 
 const source = argv.source || path.join(__dirname, 'LoginSignUp');
 const destination = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUp');
