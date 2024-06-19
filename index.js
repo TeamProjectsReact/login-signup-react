@@ -12,14 +12,15 @@ if (!type || !name) {
 let fileContent;
 let filePath;
 
-if (type === 'controller') {
+if (type === 'loginSignUp') {
+    const source = argv.source || path.join(__dirname, 'LoginSignUp');
+    const destination = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUp');
 
+    
 } 
 
 console.log(`${type.charAt(0).toUpperCase() + type.slice(1)} ${name} created at ${filePath}`);
 
-const source = argv.source || path.join(__dirname, 'LoginSignUp');
-const destination = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUp');
 
 const sourceApp = argv.source || path.join(__dirname, 'App');
 const destinationApp = argv.destination || path.join(process.cwd(), 'src/');
