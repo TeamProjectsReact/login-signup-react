@@ -18,9 +18,6 @@ if (type === 'loginSignUp') {
 
     try {
         await fs.copy(source, destination);
-        await fs.copy(sourceApp, destinationApp);
-        await fs.copy(sourcePR, destinationPR);
-        await fs.copy(sourceDash, destinationDash);
         console.log('The Login and SignUp templete Successfully Createed');
     } catch (err) {
         console.error('Error copying folder:', err);
