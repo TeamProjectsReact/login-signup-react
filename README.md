@@ -29,6 +29,15 @@
 - - with Database
 - - Still working only with Musql without MVC
 
+## v4.0.0 - 20 June 2024
+
+- Updating Package
+- Fixing Bugs 
+- Updating Backend Development Enviroment
+- Adding Backend Function for Login and SignUp
+- - with Database
+- - now working with Mysql witout MVC and With MVC
+
 # IMPORTANT Notice
 
 - This NPM package works with <b>ReactJS</b> Projects (from in v2.0.0)
