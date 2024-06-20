@@ -55,14 +55,25 @@ async function RunReactLoginSignInTW() {
 async function RunBackendMysqlNoMVC() {
     try {
         await fs.copy(sourceBackendMysqlNoMVC, destinationBackendMysqlNoMVC);
-        console.log('Backend Development Enviroment Created Successful');
+        console.log('Backend Development (Mysql without MVC) Enviroment Created Successful');
     } catch (err) {
         console.error('Error copying folder:', err);
     }
 }
 
+async function RunBackendMysqlMVC() {
+    try {
+        await fs.copy(sourceBackendMysqlMVC, destinationBackendMysqlMVC);
+        console.log('Backend Development (Mysql with MVC) Enviroment Created Successful');
+    } catch (err) {
+        console.error('Error copying folder:', err);
+    }
+}
+
+
 module.exports = {
     RunReactLoginSignIn,
     RunReactLoginSignInTW,
-    RunBackendMysqlNoMVC
+    RunBackendMysqlNoMVC,
+    RunBackendMysqlMVC
 }
