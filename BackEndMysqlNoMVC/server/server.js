@@ -28,7 +28,7 @@ app.use(cors())
 
 // all endpoint start
 
-app.post('/SignUp', (req, res) => {
+app.post('/auth/SignUp', (req, res) => {
     // console.log(req.body)
 
     // table will be change according to your table name
@@ -74,7 +74,7 @@ app.post('/SignUp', (req, res) => {
     })
 })
 
-app.post('/SignIn', (req, res) => {
+app.post('/auth/SignIn', (req, res) => {
     const tableName = "users"
     const columnData = { email: req.body.email }
 
