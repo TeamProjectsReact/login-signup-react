@@ -151,7 +151,9 @@
 
 <hr>
 
-## BackEnd
+## BackEnd 
+
+### no-MVC (Mysql)
 
 - After you install package
 
@@ -198,6 +200,59 @@ node_modules
   is_lock int`
 
   - mysql table 
+
+
+
+### with-MVC (Mysql)
+
+- After you install package
+
+- add following command to you `package.json` file at `script`
+
+``` js
+
+  "SignInUpBackendMVC": "node -e \"require('login-signup-react').RunBackendMysqlMVC()\""
+
+```
+
+- and the run above command 
+
+- after you can see `server` folder in your root folder 
+
+- it is the backend 
+
+- go inside the `server` folder and create file `.gitignore`
+
+- and add 
+
+```
+node_modules
+
+```
+
+- after run 
+
+```sh
+
+  npm install
+
+```
+
+- then develop your mysql evniroment
+
+  `ID int AI PK 
+  username varchar(45) 
+  email varchar(100) 
+  password varchar(100) 
+  role varchar(45) 
+  create_at datetime 
+  is_active int 
+  is_lock int`
+
+  - mysql table 
+
+
+
 
 - start the Project
 
