@@ -159,7 +159,7 @@
 
 ``` js
 
-  "SignInUpBackend": "node -e \"require('login-signup-react').RunBackendMysqlNoMVC()\""
+  "SignInUpBackendnoMVC": "node -e \"require('login-signup-react').RunBackendMysqlNoMVC()\""
 
 ```
 
@@ -188,7 +188,16 @@ node_modules
 
 - then develop your mysql evniroment
 
-- or you can use sql file in `Database` folder in `server` folder
+  `ID int AI PK 
+  username varchar(45) 
+  email varchar(100) 
+  password varchar(100) 
+  role varchar(45) 
+  create_at datetime 
+  is_active int 
+  is_lock int`
+
+  - mysql table 
 
 - start the Project
 
