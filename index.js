@@ -23,6 +23,8 @@ const destinationDash = argv.destination || path.join(process.cwd(), 'src/compon
 const sourceBackendMysqlNoMVC = argv.source || path.join(__dirname, 'BackEndMysqlNoMVC');
 const destinationBackendMysqlNoMVC = argv.destination || path.join(process.cwd(), '../');
 
+const sourceBackendMysqlMVC = argv.source || path.join(__dirname, 'BackEndMysqlMVC');
+const destinationBackendMysqlMVC = argv.destination || path.join(process.cwd(), '../');
 
 async function RunReactLoginSignIn() {
     try {
@@ -53,14 +55,25 @@ async function RunReactLoginSignInTW() {
 async function RunBackendMysqlNoMVC() {
     try {
         await fs.copy(sourceBackendMysqlNoMVC, destinationBackendMysqlNoMVC);
-        console.log('Backend Development Enviroment Created Successful');
+        console.log('Backend Development (Mysql without MVC) Enviroment Created Successful');
     } catch (err) {
         console.error('Error copying folder:', err);
     }
 }
 
+async function RunBackendMysqlMVC() {
+    try {
+        await fs.copy(sourceBackendMysqlMVC, destinationBackendMysqlMVC);
+        console.log('Backend Development (Mysql with MVC) Enviroment Created Successful');
+    } catch (err) {
+        console.error('Error copying folder:', err);
+    }
+}
+
+
 module.exports = {
     RunReactLoginSignIn,
     RunReactLoginSignInTW,
-    RunBackendMysqlNoMVC
+    RunBackendMysqlNoMVC,
+    RunBackendMysqlMVC
 }
