@@ -3,6 +3,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 const argv = require('yargs').argv;
+const inquirer = require('inquirer');
 
 const source = argv.source || path.join(__dirname, 'LoginSignUp');
 const destination = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUp');

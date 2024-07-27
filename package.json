@@ -30,6 +30,7 @@
     "jkmysql-easy": "^1.4.0",
     "jsonwebtoken": "^9.0.2",
     "react-secure-storage": "^1.3.2",
-    "yargs": "^17.7.2"
+    "yargs": "^17.7.2",
+    "inquirer": "^6.0.0"
   }
 }
