@@ -82,6 +82,12 @@ async function main() {
           name: 'selection',
           message: 'Select Your Front End :',
           choices: ['Uing TailWindCSS', 'Using Custom CSS'],
+        },
+        {
+            type: 'list',
+            name: 'selection',
+            message: 'Select Your BackEnd End :',
+            choices: ['Using MySQL without MVC', 'Using MySQL with MVC'],
         }
       ]);
   
@@ -89,11 +95,21 @@ async function main() {
 
       switch (selection) {
         case 'Uing TailWindCSS':
-          await RunReactLoginSignInTW();
-          break;
+            await RunReactLoginSignInTW();
+            break;
+
         case 'Using Custom CSS':
-          console.log('The Custom CSS is Under Developmrnt Please Select TailWind CSS');          
-          break;
+            await RunReactLoginSignIn();       
+            break;
+
+        case 'Using MySQL without MVC':
+            await RunBackendMysqlNoMVC();          
+            break;
+
+        case 'Using MySQL with MVC':
+            await RunBackendMysqlMVC();          
+            break;
+
         default:
           console.log('Invalid selection.');
       }
