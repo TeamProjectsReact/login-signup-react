@@ -2,6 +2,20 @@
 
 - This NPM Package is Develop for ReactJS Frontend Developers to make development easy.
 - The one Command make the all Login Sign Up interfaces
+- Latest Version (v5.0.0  27 July -2024)
+
+- Updates of `v5.0.0  27 July -2024`
+
+- - developer no need to copy and past commands 
+- - only run following command after install this package and other packages
+
+- - you must install 
+
+- - - react-router-dom
+- - - axios
+- - - react-icons
+
+- - before run the app
 
 # Releases
 
