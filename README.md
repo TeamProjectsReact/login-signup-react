@@ -1,7 +1,28 @@
-# Login SignUp React Template
+# Login SignUp React 
 
 - This NPM Package is Develop for ReactJS Frontend Developers to make development easy.
 - The one Command make the all Login Sign Up interfaces
+- Latest Version (v5.0.0  27 July -2024)
+
+- Updates of `v5.0.0  27 July -2024`
+
+- - developer no need to copy and past commands 
+- - only run following command after install this package and other packages
+
+
+``` js
+
+npx create-login-SignUp
+
+```
+
+- - you must install 
+
+- - - react-router-dom
+- - - axios
+- - - react-icons
+
+- - before run the app
 
 # Releases
 
@@ -46,6 +67,24 @@
 - Adding Backend Function for Login and SignUp
 - - with Database
 - - now working with Mysql witout MVC and With MVC
+
+## v5.0.0 - 27 July 2024
+
+- Updating Package
+- 5th Major Release
+- same as v4.0.0
+- Updating is
+- - developer no need to copy the commands in here to genarate backend and Front end
+- - only thing is run the following command
+
+``` js
+
+npx create-login-SignUp
+
+```
+
+- - Then Select the option that you need
+
 
 # IMPORTANT Notice
 

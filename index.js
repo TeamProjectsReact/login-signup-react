@@ -1,6 +1,9 @@
+#!/usr/bin/env node
+
 const fs = require('fs-extra');
 const path = require('path');
 const argv = require('yargs').argv;
+const inquirer = require('inquirer');
 
 const source = argv.source || path.join(__dirname, 'LoginSignUp');
 const destination = argv.destination || path.join(process.cwd(), 'src/components/LoginSignUp');
@@ -70,10 +73,57 @@ async function RunBackendMysqlMVC() {
     }
 }
 
+async function main() {
+    try {
+      // Prompt the user to select an option from the list
+      const answers = await inquirer.prompt([
+        {
+          type: 'list',
+          name: 'selection1',
+          message: 'Select Your Front End :',
+          choices: ['Uing TailWindCSS', 'Using Custom CSS'],
+        },
+        {
+            type: 'list',
+            name: 'selection2',
+            message: 'Select Your BackEnd End :',
+            choices: ['Using MySQL without MVC', 'Using MySQL with MVC'],
+        }
+      ]);
+  
+      const { selection1, selection2 } = answers;
 
-module.exports = {
-    RunReactLoginSignIn,
-    RunReactLoginSignInTW,
-    RunBackendMysqlNoMVC,
-    RunBackendMysqlMVC
-}
+      switch (selection1) {
+        case 'Uing TailWindCSS':
+            await RunReactLoginSignInTW();
+            break;
+
+        case 'Using Custom CSS':
+            await RunReactLoginSignIn();       
+            break;
+
+        default:
+          console.log('Invalid selection.');
+      }
+
+      switch (selection2) {
+        case 'Using MySQL without MVC':
+            await RunBackendMysqlNoMVC();          
+            break;
+
+        case 'Using MySQL with MVC':
+            await RunBackendMysqlMVC();          
+            break;
+
+        default:
+          console.log('Invalid selection.');
+      }
+    } catch (error) {
+      console.error(`An error occurred: ${error.message}`);
+    }
+  }
+  
+  main();
+  
+
+
