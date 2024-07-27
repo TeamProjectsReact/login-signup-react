@@ -9,6 +9,13 @@
 - - developer no need to copy and past commands 
 - - only run following command after install this package and other packages
 
+
+``` js
+
+npx create-login-SignUp
+
+```
+
 - - you must install 
 
 - - - react-router-dom
