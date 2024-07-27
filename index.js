@@ -77,21 +77,19 @@ async function main() {
         {
           type: 'list',
           name: 'selection',
-          message: 'Select an option:',
-          choices: ['AppTW', 'App'],
+          message: 'Select Your Front End :',
+          choices: ['Uing TailWindCSS', 'Using Custom CSS'],
         }
       ]);
   
       const { selection } = answers;
-  
-      // Handle the user's selection
+
       switch (selection) {
-        case 'AppTW':
+        case 'Uing TailWindCSS':
           await RunReactLoginSignInTW();
           break;
-        case 'App':
-          console.log('Selected App. Implement function here.');
-          // Implement other functions or logic for 'App' here
+        case 'Using Custom CSS':
+          console.log('The Custom CSS is Under Developmrnt Please Select TailWind CSS');          
           break;
         default:
           console.log('Invalid selection.');
