@@ -47,6 +47,24 @@
 - - with Database
 - - now working with Mysql witout MVC and With MVC
 
+## v5.0.0 - 27 July 2024
+
+- Updating Package
+- 5th Major Release
+- same as v4.0.0
+- Updating is
+- - developer no need to copy the commands in here to genarate backend and Front end
+- - only thing is run the following command
+
+``` js
+
+npx create-login-SignUp
+
+```
+
+- - Then Select the option that you need
+
+
 # IMPORTANT Notice
 
 - This NPM package works with <b>ReactJS</b> Projects (from in v2.0.0)

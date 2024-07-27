@@ -79,21 +79,21 @@ async function main() {
       const answers = await inquirer.prompt([
         {
           type: 'list',
-          name: 'selection',
+          name: 'selection1',
           message: 'Select Your Front End :',
           choices: ['Uing TailWindCSS', 'Using Custom CSS'],
         },
         {
             type: 'list',
-            name: 'selection',
+            name: 'selection2',
             message: 'Select Your BackEnd End :',
             choices: ['Using MySQL without MVC', 'Using MySQL with MVC'],
         }
       ]);
   
-      const { selection } = answers;
+      const { selection1, selection2 } = answers;
 
-      switch (selection) {
+      switch (selection1) {
         case 'Uing TailWindCSS':
             await RunReactLoginSignInTW();
             break;
@@ -102,6 +102,11 @@ async function main() {
             await RunReactLoginSignIn();       
             break;
 
+        default:
+          console.log('Invalid selection.');
+      }
+
+      switch (selection2) {
         case 'Using MySQL without MVC':
             await RunBackendMysqlNoMVC();          
             break;
