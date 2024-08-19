@@ -107,7 +107,7 @@ async function main() {
       const { selection1, selection2 } = answers;
 
       switch (selection1) {
-        case 'Uing TailWindCSS':
+        case 'Using TailWindCSS':
             await RunReactLoginSignInTW();
             break;
 
