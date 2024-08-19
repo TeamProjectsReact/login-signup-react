@@ -26,27 +26,13 @@ const SignIn = () => {
             //store token in localstorage
             localStorage.setItem('LoginToken', loginToken)
 
-            if(res.data.Msg === "Success"){
-                if(res.data.LoginUser[0].is_active === 0 && res.data.LoginUser[0].is_lock === 1){
-                    alert('Your Account has been locked. Unauthorized activity has been detected.')
-                    localStorage.clear()
-                    navigate('/')
-                }
-                else if(res.data.LoginUser[0].is_active === 0){
-                    alert('Your Account is still not Activate Wait for Activate from Admin')
-                    localStorage.clear()
-                    navigate('/')
-                }
-                else{
-                    //get and store login user role and email
-                    const userRole = res.data.LoginUser[0].role;
-                    const userEmail = res.data.LoginUser[0].email;
-
-                    //store data in localstore so that use secureLocalStorage
-                    secureLocalStorage.setItem("Login1", userRole);
-                    secureLocalStorage.setItem("login2", userEmail);
-                    navigate('/Dashboard');
-                }
+            if(res.data.Status === "Success"){
+                alert("Login Successfull")
+                localStorage.setItem('token', res.data.Token)
+                navigate('/Dashboard')
+                // login user Email 
+                secureLocalStorage.setItem('Login1', res.data.Result.email)
+                secureLocalStorage.setItem('Login2', res.data.Result.Role)
             }
             else{
                 alert(res.data.Error)

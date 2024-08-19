@@ -29,6 +29,9 @@ const destinationBackendMysqlNoMVC = argv.destination || path.join(process.cwd()
 const sourceBackendMysqlMVC = argv.source || path.join(__dirname, 'BackEndMysqlMVC');
 const destinationBackendMysqlMVC = argv.destination || path.join(process.cwd(), '../');
 
+const sourceBackendMongoDBMVC = argv.source || path.join(__dirname, 'BackEndMongoMVC');
+const destinationBackendMongoDBMVC = argv.destination || path.join(process.cwd(), '../');
+
 async function RunReactLoginSignIn() {
     try {
         await fs.copy(source, destination);
@@ -73,6 +76,16 @@ async function RunBackendMysqlMVC() {
     }
 }
 
+async function RunBackendMongoDBMVC() {
+    try {
+        await fs.copy(sourceBackendMongoDBMVC, destinationBackendMongoDBMVC);
+        console.log('Backend Development (MongoDB with MVC) Enviroment Created Successful');
+    } catch (err) {
+        console.error('Error copying folder:', err);
+    }
+}
+
+
 async function main() {
     try {
       // Prompt the user to select an option from the list
@@ -81,20 +94,20 @@ async function main() {
           type: 'list',
           name: 'selection1',
           message: 'Select Your Front End :',
-          choices: ['Uing TailWindCSS', 'Using Custom CSS'],
+          choices: ['Using TailWindCSS', 'Using Custom CSS'],
         },
         {
             type: 'list',
             name: 'selection2',
             message: 'Select Your BackEnd End :',
-            choices: ['Using MySQL without MVC', 'Using MySQL with MVC'],
+            choices: ['Using MySQL without MVC', 'Using MySQL with MVC', 'Using MongoDB with MVC (Recommended)'],
         }
       ]);
   
       const { selection1, selection2 } = answers;
 
       switch (selection1) {
-        case 'Uing TailWindCSS':
+        case 'Using TailWindCSS':
             await RunReactLoginSignInTW();
             break;
 
@@ -113,6 +126,10 @@ async function main() {
 
         case 'Using MySQL with MVC':
             await RunBackendMysqlMVC();          
+            break;
+
+        case 'Using MongoDB with MVC (Recommended)':
+            await RunBackendMongoDBMVC();          
             break;
 
         default:
